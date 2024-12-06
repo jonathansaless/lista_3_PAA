@@ -97,7 +97,7 @@ def main():
         # Classificação final
         classificados = tabela.classificacao()
         
-        # Exibindo a classificação para o caso atual
+        # Exibe a classificação
         for time in classificados:
             print(time.nome)
 
