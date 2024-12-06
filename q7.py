@@ -7,5 +7,4 @@ def teste(m, n):
     else:
         return teste(m-1,teste(m, n-1))
     
-
 testando = teste(1, 2)
