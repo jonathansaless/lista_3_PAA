@@ -94,7 +94,7 @@ def main():
             jogo = input().split()
             tabela.atualiza(jogo)
 
-        # Classificação final
+        # Organiza a classificação final
         classificados = tabela.classificacao()
         
         # Exibe a classificação
