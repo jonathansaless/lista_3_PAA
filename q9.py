@@ -75,11 +75,17 @@ def main():
             print("Número de jogos inválido. O número de jogos deve ser entre 1 e 1000.")
             continue
 
-        # Criação dos times
         times = []
-        for i in range(N):
+        i = 0
+        # Recebendo os times
+        while i < N:
             time = input().strip()
-            times.append(Time(time))
+            # Verifica se time já existe
+            if time in times:
+                print('O time já existe, digite um novo nome!')
+            else:
+                times.append(Time(time))
+                i+=1
 
         tabela = Tabela(times)
         
