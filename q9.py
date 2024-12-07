@@ -77,6 +77,7 @@ def main():
 
         times = []
         i = 0
+
         # Recebendo os times
         while i < N:
             time = input().strip()
@@ -94,10 +95,9 @@ def main():
             jogo = input().split()
             tabela.atualiza(jogo)
 
-        # Organiza a classificação final
+        # Organiza a classificação final e recebe a lista de times em orderm de classificação
         classificados = tabela.classificacao()
         
-        # Exibe a classificação
         for time in classificados:
             print(time.nome)
 
