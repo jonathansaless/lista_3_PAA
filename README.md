@@ -1,1 +1,1 @@
-# lista_3_PAA
+# Resolução das questões 9 e 10 da lista 3 de PAA
