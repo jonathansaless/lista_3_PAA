@@ -1,6 +1,6 @@
 import sys
 
-# defino um novo limite de recursão para que o código funcione corretamente em valores altos de n
+# Define um novo limite de recursão para que o código funcione corretamente em valores altos de n
 sys.setrecursionlimit(200000)
 
 def josephus(n, k):
