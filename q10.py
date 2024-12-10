@@ -9,12 +9,17 @@ def josephus(n, k):
         return 0
     # Caso recorrente
     else:
+        # Ajusta a posição do sobrevivente com base na eliminação atual.
         return (josephus(n - 1, k) + k) % n
 
 def main():
+    # NC = Número de casos de teste
     NC = int(input())
+
     for case_ in range(1, NC + 1):
         primeira_linha = input()
+        # n = Número de pessoas na roda
+        # k = Intervalo de eliminação
         n, k = (int(numero) for numero in primeira_linha.split())
         
         sobrevivente = josephus(n, k) + 1
